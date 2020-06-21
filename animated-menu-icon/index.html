@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Skeleton Loader</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="bars-wrap" id="menu-icons">
+				<div class="bar bar-1 no-animate"></div>
+				<div class="bar bar-2 no-animate"></div>
+				<div class="bar bar-3 no-animate"></div>
+			</div>
+		</div>
+
+		<script>
+			const menuBar = document.querySelector('#menu-icons');
+			const icons = document.querySelectorAll('.bar');
+			menuBar.addEventListener('click', function () {
+				for (i = 0; i < icons.length; i++) {
+					icons[i].classList.remove('no-animate');
+				}
+			});
+		</script>
+	</body>
+</html>
