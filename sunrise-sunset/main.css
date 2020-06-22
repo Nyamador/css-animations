@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+	background-color: rgb(12, 12, 53);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container {
+	background-color: white;
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.sky {
+	background-color: #7ddffc;
+	height: 160px;
+}
+
+.sand {
+	background-color: #f0de75;
+	height: 90px;
+}
+
+.pyramid-left {
+	background-color: #f4f4f4;
+	position: relative;
+	top: -190px;
+	left: 86px;
+	height: 70px;
+	width: 50px;
+	clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-right {
+	background-color: #dddada;
+	position: relative;
+	top: -259px;
+	left: 136px;
+	height: 70px;
+	width: 50px;
+	clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.sun {
+	border-radius: 50%;
+	background: #ffef00;
+	position: relative;
+	height: 30px;
+    width: 30px;
+    top: -227px;
+    right: -115px;
+    transform-origin: 50% 600%;
+    animation: sunrise-to-sunset 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+
+@keyframes sunrise-to-sunset{
+  0% {
+    background: #F57209;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  30% {
+    background: #FFEF00;
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg);
+  }
+  70% {
+    background: #FFEF00;
+  }
+  100% {
+    background: #F57209;
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+}
+
+}
