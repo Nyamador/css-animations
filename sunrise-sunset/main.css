@@ -13,7 +13,9 @@ body {
 	height: 250px;
 	width: 250px;
 	margin: 0 auto;
-	overflow: hidden;
+    overflow: hidden;
+    /* animation: fade-circle 5s linear infinite; */
+    animation: fade-circle 5s cubic-bezier(0.75, 0.41, 0.76, 0.43) infinite;
 }
 
 .sky {
@@ -33,17 +35,19 @@ body {
 	left: 86px;
 	height: 70px;
 	width: 50px;
-	clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    animation: darken-left-pyramid 5s linear infinite;
 }
 
 .pyramid-right {
-	background-color: #dddada;
+	background-color: #919191;
 	position: relative;
 	top: -259px;
 	left: 136px;
 	height: 70px;
 	width: 50px;
-	clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    animation: darken-right-pyramid 5s linear infinite;
 }
 
 .sun {
@@ -55,7 +59,7 @@ body {
     top: -227px;
     right: -115px;
     transform-origin: 50% 600%;
-    animation: sunrise-to-sunset 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+    animation: sunrise-to-sunset 5s cubic-bezier(0.4, 0, 0.49, 1) infinite;
 }
 
 
@@ -80,4 +84,43 @@ body {
   }
 }
 
+@keyframes darken-left-pyramid{
+    0%{
+        background-color: #f4f4f4;
+    }
+
+    50%{
+        background-color: #dddada;
+    }
+
+    100%{
+        background-color: #919191;
+    }
+}
+
+
+@keyframes darken-right-pyramid{
+    0%{
+        background-color: #919191;
+    }
+
+    50%{
+        background-color: #f7f7f7;
+    }
+
+    100%{
+        background-color: #fcfcfc;
+    }
+
+
+}
+
+@keyframes fade-circle{
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
 }
