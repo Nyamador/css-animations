@@ -1,0 +1,120 @@
+body {
+	background-color: #42a7a1;
+	margin: 0;
+	height: 100vh;
+}
+
+.card-wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	border-radius: 8px;
+	box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+	height: 60px;
+	background-color: #f1ba64;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	padding: 12px;
+}
+
+.header-section {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-section:last-child {
+	text-align: right;
+}
+
+.heading {
+	font-weight: bold;
+}
+
+.small {
+	font-size: 12px;
+}
+
+.keys {
+	display: flex;
+	flex-direction: row;
+	text-align: right;
+	font-size: 9px;
+	align-items: center;
+	margin-right: 5px;
+	padding: 10px 0 14px 0;
+}
+
+.key-1:before {
+	background: #fa7373;
+}
+
+.key-2:after {
+	content: 'Purchases';
+}
+
+.key-2:before {
+	background: #7ba2ff;
+}
+
+.keys:before {
+	position: relative;
+	display: block;
+	content: '';
+	width: 11px;
+	height: 3px;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.stats {
+	margin: 0 10px;
+	position: relative;
+	height: 81px;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+	height: 1px;
+	background-color: #f2f2f2;
+	position: absolute;
+	width: 100%;
+}
+
+.line-1 {
+	top: 0px;
+}
+
+.line-2 {
+	top: 40px;
+}
+
+.line-3 {
+	top: 80px;
+}
+.day {
+	display: block;
+	float: left;
+	width: 14.2857142857%;
+	font-size: 9px;
+	color: #949494;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
