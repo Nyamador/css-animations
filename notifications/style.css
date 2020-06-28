@@ -1,5 +1,7 @@
 body{
     background-color: #264057;
+    color: #666;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -8,6 +10,7 @@ body{
 }
 
 .notifications-panel{
+    font-family: sans-serif;
     box-shadow:  10px 10px 15px 0 rgba(0, 0, 0, 0.3);
     background-color: white;
     border-radius: 3px;
@@ -19,12 +22,58 @@ body{
 .panel-header{
     height: 60px;
     background-color: #5F98CD;
+    color: white;
 }
 
 .notifications{
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+}
 
+.notification p{
+    margin: 0;
+    font-size: 15px;
 }
 
 .line{
     background: #EBEBEB;
+    width: 3px;
+    position: absolute;
+    left: 14px;
+    height: calc(300px - 64px);
+}
+
+.notification{
+    padding-top: 10px;
+    padding: 25px 20px 25px 43px;
+    animation: pop-up 0.5 ease-out 0.6s;
+}
+
+.notification .span{
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 2px;
+}
+
+.circle{
+    border: 2px solid #5F98CD;
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 9px;
+}
+
+@keyframes pop-up{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100%{
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+    }
 }
