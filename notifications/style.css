@@ -1,0 +1,30 @@
+body{
+    background-color: #264057;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notifications-panel{
+    box-shadow:  10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 3px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.panel-header{
+    height: 60px;
+    background-color: #5F98CD;
+}
+
+.notifications{
+
+}
+
+.line{
+    background: #EBEBEB;
+}
