@@ -23,6 +23,9 @@ body{
     height: 60px;
     background-color: #5F98CD;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .notifications{
