@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bubble-frame{
+        height: 400px;
+        width: 400px;
+        border: 1px solid salmon;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+}
+
+
+.bubble{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rotate-circle 2.7s ease-in-out 0.2s infinite;
+}
+
+.b1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
+}
+
+@keyframes rotate-circle{
+    from {
+        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+                transform: rotate(0deg) translate3d(0, 0, 0);
+      }
+      to {
+        -webkit-transform: rotate(360deg) translate3d(0, 0, 0);
+                transform: rotate(360deg) translate3d(0, 0, 0);
+      }
+}

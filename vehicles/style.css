@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	background-color: #4b4841;
+	position: relative;
+}
+
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 50%;
+	bottom: 50%;
+	background: #ffce4e;
+	height: 200px;
+	width: 200px;
+}
