@@ -1,5 +1,5 @@
 # css-animations
-A Collection of CSS Animations to help you understand animations in css.
+An awesome collection of css animations. 
 
 
 ### How to Get started
